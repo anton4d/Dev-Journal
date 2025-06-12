@@ -80,10 +80,12 @@ def get_header_and_tail(folder):
     tail = f"\n\n > _This Index is automatically maintained. Last updated: **{date.today()}**_"
     if (folder == "ongoing"):
         head = """# ongoing projects
+
 This section lists all currently active projects with more detail than the [main index](../index.md).
 
 To be considered "ongoing," a project should show activity at least once a month.
 If a project becomes inactive, it will be either:
+
 - moved to the **archive** (if dropped permanently), or 
 - moved to **on-hold** (if I plan to return to it later)
 
@@ -91,10 +93,12 @@ If a project becomes inactive, it will be either:
         return head, tail
     if (folder == "completed"):
         head = """# Completed projects
+
 This section lists all currently active projects with more detail than the [main index](../index.md).
 
 To be considered "ongoing," a project should show activity at least once a month.
 If a project becomes inactive, it will be either:
+
 - moved to the **archive** (if dropped permanently), or 
 - moved to **on-hold** (if I plan to return to it later)
 
@@ -102,10 +106,12 @@ If a project becomes inactive, it will be either:
         return head, tail
     if (folder == "archive"):
         head = """# Archived projects
+
 This section lists all currently active projects with more detail than the [main index](../index.md).
 
 To be considered "ongoing," a project should show activity at least once a month.
 If a project becomes inactive, it will be either:
+
 - moved to the **archive** (if dropped permanently), or 
 - moved to **on-hold** (if I plan to return to it later)
 
@@ -113,10 +119,12 @@ If a project becomes inactive, it will be either:
         return head, tail
     if (folder == "on_hold"):
         head = """# On Hold projects
+
 This section lists all currently active projects with more detail than the [main index](../index.md).
 
 To be considered "ongoing," a project should show activity at least once a month.
 If a project becomes inactive, it will be either:
+
 - moved to the **archive** (if dropped permanently), or 
 - moved to **on-hold** (if I plan to return to it later)
 
@@ -127,6 +135,7 @@ If a project becomes inactive, it will be either:
 
 def update_main_index():
     main_head = f"""# Project Portfolio Index
+
 Welcome to my markdown-based dev journal that functions as a portfolio.  
 Below you'll find all of my projects, organized by status: ongoing, completed,on hold, and archived.
 
@@ -134,6 +143,7 @@ Below you'll find all of my projects, organized by status: ongoing, completed,on
     main_tail =f"""
 
 ## Navigation
+
 - [README.md](./README.md) # Learn more about this repo
 - [Contact.md].(./CONTACT.md) # My contact info and a bit about my self
 

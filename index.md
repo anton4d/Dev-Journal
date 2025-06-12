@@ -1,4 +1,5 @@
 # Project Portfolio Index
+
 Welcome to my markdown-based dev journal that functions as a portfolio.  
 Below you'll find all of my projects, organized by status: ongoing, completed,on hold, and archived.
 
@@ -36,6 +37,7 @@ Below you'll find all of my projects, organized by status: ongoing, completed,on
 
 
 ## Navigation
+
 - [README.md](./README.md) # Learn more about this repo
 - [Contact.md].(./CONTACT.md) # My contact info and a bit about my self
 
