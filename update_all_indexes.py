@@ -35,22 +35,28 @@ def extract_frontmatter(path):
 
 def build_sub_index_table(entries):
     header = "| Project | Started | Description | Language | Goal |\n"
-    divider = "|---------|---------|-------------|----------|------|\n"
+    divider = "|---------|---------|-------------|----------|------|"
     rows = []
-    for meta in entries:
-        row = f"| [{meta['title']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} | {meta['language']} | {meta['goal']} |"
-        rows.append(row)
-    return header + divider + "\n".join(rows)
+    if entries:
+        for meta in entries:
+            row = f"| [{meta['title']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} |"
+            rows.append(row)
+    
+        return header + divider + "\n" +"\n".join(rows)
+    return header + divider
 
 def build_main_index_table(entries,section_name,folder):
     header = f"""[{section_name} index](./{folder}/index.md)\n
 | Project | Started | Description |\n"""
-    divider = "|---------|---------|-------------|\n"
+    divider = "|---------|---------|-------------|"
     rows = []
-    for meta in entries:
-        row = f"| [{meta['title']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} |"
-        rows.append(row)
-    return header + divider + "\n".join(rows)
+    if entries:
+        for meta in entries:
+            row = f"| [{meta['title']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} |"
+            rows.append(row)
+    
+        return header + divider + "\n" +"\n".join(rows)
+    return header + divider
 
 def update_sub_index(section_name, folder):
     entries = []
@@ -77,16 +83,17 @@ def update_sub_index(section_name, folder):
     return f"## {section_name}\n\n" + maintable + "\n"
 
 def get_header_and_tail(folder):
-    tail = f"\n\n > _This Index is automatically maintained. Last updated: **{date.today()}**_"
+    tail = f"\n\n> _This Index is automatically maintained. Last updated: **{date.today()}**_\n"
     if (folder == "ongoing"):
         head = """# ongoing projects
 
-This section lists all currently active projects with more detail than the [main index](../index.md).
+This section lists all currently active projects
+ with more detail than the [main index](../index.md).
 
 To be considered "ongoing," a project should show activity at least once a month.
 If a project becomes inactive, it will be either:
 
-- moved to the **archive** (if dropped permanently), or 
+- moved to the **archive** (if dropped permanently), or
 - moved to **on-hold** (if I plan to return to it later)
 
 """
@@ -94,12 +101,13 @@ If a project becomes inactive, it will be either:
     if (folder == "completed"):
         head = """# Completed projects
 
-This section lists all currently active projects with more detail than the [main index](../index.md).
+This section lists all currently active projects
+ with more detail than the [main index](../index.md).
 
 To be considered "ongoing," a project should show activity at least once a month.
 If a project becomes inactive, it will be either:
 
-- moved to the **archive** (if dropped permanently), or 
+- moved to the **archive** (if dropped permanently), or
 - moved to **on-hold** (if I plan to return to it later)
 
 """
@@ -107,12 +115,13 @@ If a project becomes inactive, it will be either:
     if (folder == "archive"):
         head = """# Archived projects
 
-This section lists all currently active projects with more detail than the [main index](../index.md).
+This section lists all currently active projects
+ with more detail than the [main index](../index.md).
 
 To be considered "ongoing," a project should show activity at least once a month.
 If a project becomes inactive, it will be either:
 
-- moved to the **archive** (if dropped permanently), or 
+- moved to the **archive** (if dropped permanently), or
 - moved to **on-hold** (if I plan to return to it later)
 
 """
@@ -120,12 +129,13 @@ If a project becomes inactive, it will be either:
     if (folder == "on_hold"):
         head = """# On Hold projects
 
-This section lists all currently active projects with more detail than the [main index](../index.md).
+This section lists all currently active projects
+ with more detail than the [main index](../index.md).
 
 To be considered "ongoing," a project should show activity at least once a month.
 If a project becomes inactive, it will be either:
 
-- moved to the **archive** (if dropped permanently), or 
+- moved to the **archive** (if dropped permanently), or
 - moved to **on-hold** (if I plan to return to it later)
 
 """
@@ -137,16 +147,14 @@ def update_main_index():
     main_head = f"""# Project Portfolio Index
 
 Welcome to my markdown-based dev journal that functions as a portfolio.  
-Below you'll find all of my projects, organized by status: ongoing, completed,on hold, and archived.
+Below you'll find all of my projects,
+organized by status: ongoing, completed,on hold, and archived.
 
 """
-    main_tail =f"""
-
-## Navigation
+    main_tail =f"""## Navigation
 
 - [README.md](./README.md) # Learn more about this repo
 - [Contact.md].(./CONTACT.md) # My contact info and a bit about my self
-
 
 > _This Index is automatically maintained. Last updated: **{date.today()}**_
 """

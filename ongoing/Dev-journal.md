@@ -16,10 +16,12 @@ tags:
 **Start Date:** 2025-06-12
 
 ## Overview
+
 This project is about creating an main github repo to showcase all projects that i have created.
 
 
 ## Goals
+
 - [ ] Create index files that showcase current projects
 - [ ] Create a python scripts that automatically updates the index files
 - [ ] Add the python file to a github action workflow
