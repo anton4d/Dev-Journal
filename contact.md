@@ -20,6 +20,7 @@ My hobbies outside of dev work are:
 
 ## Contact info
 
-**Email:** anton.l.s.christensen@gmail.com  
-**Linkind:** [Anton Christensen](https://www.linkedin.com/in/anton-christensen-863400291/)  
+**Email:** <anton.l.s.christensen@gmail.com>  
+**Linkind:** 
+[Anton Christensen](https://www.linkedin.com/in/anton-christensen-863400291/)  
 **Github:** anton4d  
