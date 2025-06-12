@@ -2,8 +2,8 @@
 
 Welcome to my **Markdown Blog** where I document
  and reflect on all my **ongoing** and **completed projects**.  
-This repo serves as a developer journal, tracking ideas, progress, challenges, and outcomes.
-
+This repo serves as a developer journal,
+ tracking ideas, progress, challenges, and outcomes.
 
 ## Structure
 
