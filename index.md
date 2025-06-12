@@ -36,6 +36,6 @@ organized by status: ongoing, completed,on hold, and archived.
 ## Navigation
 
 - [README.md](./README.md) # Learn more about this repo
-- [Contact.md].(./CONTACT.md) # My contact info and a bit about my self
+- [Contact.md](./CONTACT.md) # My contact info and a bit about my self
 
 > _This Index is automatically maintained. Last updated: **2025-06-12**_
