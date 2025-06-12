@@ -10,7 +10,6 @@ organized by status: ongoing, completed,on hold, and archived.
 
 | Project | Started | Description |
 |---------|---------|-------------|
-| [Dev Journal](./Dev-journal.md) | 2025-06-12 | A GitHub-based portfolio and dev log |
 
 ## Completed Projects
 
@@ -18,6 +17,7 @@ organized by status: ongoing, completed,on hold, and archived.
 
 | Project | Started | Description |
 |---------|---------|-------------|
+| [Dev Journal](./Dev-journal.md) | 2025-06-12 | A GitHub-based portfolio and dev log |
 
 ## On Hold
 
