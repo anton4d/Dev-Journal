@@ -1,6 +1,6 @@
 ---
 projectTitle: "Dev Journal"
-status: "Ongoing"
+status: "Completed"
 started: "2025-06-12"
 description: "A GitHub-based portfolio and dev log"
 language: "Markdown, python"
@@ -23,9 +23,9 @@ This project is about creating an main
 
 ## Goals
 
-- [ ] Create index files that showcase current projects
-- [ ] Create a python scripts that automatically updates the index files
-- [ ] Add the python file to a github action workflow
+- [x] Create index files that showcase current projects
+- [x] Create a python scripts that automatically updates the index files
+- [x] Add the python file to a github action workflow
 
 ## Stack
 
@@ -36,7 +36,7 @@ This project is about creating an main
 ## Progress
 
 - 2025-06-12: Started work
-- YYYY-MM-DD: Reached MVP
+- 2025-06-12: Reached MVP
 
 ## Links
 
