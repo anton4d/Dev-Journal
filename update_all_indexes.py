@@ -39,7 +39,7 @@ def build_sub_index_table(entries):
     rows = []
     if entries:
         for meta in entries:
-            row = f"| [{meta['projectTitle']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} |"
+            row = f"| [{meta['projectTitle']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} | {meta['language']} | {meta['goal']} |"
             rows.append(row)
     
         return header + divider + "\n" +"\n".join(rows)
