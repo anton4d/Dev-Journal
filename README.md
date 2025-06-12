@@ -9,6 +9,8 @@ This repo serves as a developer journal, tracking ideas, progress, challenges, a
 
 ├── index.md # List of all projects
 
+├── Contact.md # A bit about me and my Contact info
+
 ├── ongoing/ # Active projects in progress
 
 ├── completed/ # Finished and archived projects
