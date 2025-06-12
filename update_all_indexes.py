@@ -10,7 +10,7 @@ SECTIONS = {
 }
 
 MAIN_INDEX = "index.md"
-REQUIRED_FIELDS = ["title", "started", "description", "language", "goal"]
+REQUIRED_FIELDS = ["projectTitle", "started", "description", "language", "goal"]
 
 def is_valid_metadata(meta):
     return all(field in meta for field in REQUIRED_FIELDS)
@@ -39,7 +39,7 @@ def build_sub_index_table(entries):
     rows = []
     if entries:
         for meta in entries:
-            row = f"| [{meta['title']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} |"
+            row = f"| [{meta['projectTitle']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} |"
             rows.append(row)
     
         return header + divider + "\n" +"\n".join(rows)
@@ -52,7 +52,7 @@ def build_main_index_table(entries,section_name,folder):
     rows = []
     if entries:
         for meta in entries:
-            row = f"| [{meta['title']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} |"
+            row = f"| [{meta['projectTitle']}]({meta['rel_path']}) | {meta['started']} | {meta['description']} |"
             rows.append(row)
     
         return header + divider + "\n" +"\n".join(rows)
@@ -67,7 +67,7 @@ def update_sub_index(section_name, folder):
             if frontmatter and is_valid_metadata(frontmatter):
                 frontmatter["rel_path"] = f"./{fname}"
                 entries.append(frontmatter)
-                print(f"Processed: {fname} -> {frontmatter['title']}")
+                print(f"Processed: {fname} -> {frontmatter['projectTitle']}")
 
     entries.sort(key=lambda x: x.get("started", ""), reverse=True)
     
