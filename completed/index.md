@@ -11,6 +11,6 @@ If a project becomes inactive, it will be either:
 
 | Project | Started | Description | Language | Goal |
 |---------|---------|-------------|----------|------|
-| [Dev Journal](./Dev-journal.md) | 2025-06-12 | A GitHub-based portfolio and dev log |
+| [Dev Journal](./Dev-journal.md) | 2025-06-12 | A GitHub-based portfolio and dev log | Markdown, python | Showcase all projects in one place and keep personal track of progress |
 
 > _This Index is automatically maintained. Last updated: **2025-06-12**_
