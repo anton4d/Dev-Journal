@@ -101,28 +101,24 @@ If a project becomes inactive, it will be either:
     if (folder == "completed"):
         head = """# Completed projects
 
-This section lists all currently active projects
+This section lists all currently completed projects
  with more detail than the [main index](../index.md).
 
-To be considered "ongoing," a project should show activity at least once a month.
-If a project becomes inactive, it will be either:
+To be considered "completed," a project should have
+ achived its learning goal and overall goal.
 
-- moved to the **archive** (if dropped permanently), or
-- moved to **on-hold** (if I plan to return to it later)
+A project can at anytime be moved back to ongoing if somting new is
+ learned and the project needs more time in the oven.
 
 """
         return head, tail
     if (folder == "archive"):
         head = """# Archived projects
 
-This section lists all currently active projects
+This section lists all currently archived projects
  with more detail than the [main index](../index.md).
 
-To be considered "ongoing," a project should show activity at least once a month.
-If a project becomes inactive, it will be either:
-
-- moved to the **archive** (if dropped permanently), or
-- moved to **on-hold** (if I plan to return to it later)
+To be considered "archived," a project should be dropped permanently.
 
 """
         return head, tail
@@ -132,11 +128,8 @@ If a project becomes inactive, it will be either:
 This section lists all currently active projects
  with more detail than the [main index](../index.md).
 
-To be considered "ongoing," a project should show activity at least once a month.
-If a project becomes inactive, it will be either:
-
-- moved to the **archive** (if dropped permanently), or
-- moved to **on-hold** (if I plan to return to it later)
+To be considered "onhold," a project should be inactivity.
+ If a project becomes active agian, it will be moved to **ongoing**.
 
 """
         return head, tail
