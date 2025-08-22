@@ -10,6 +10,7 @@ organized by status: ongoing, completed,on hold, and archived.
 
 | Project | Started | Description |
 |---------|---------|-------------|
+| [Mine Sweeper project](./MineSweeperProject.md) | 2025-08-22 | Making mine sweeper in mutiple languages |
 
 ## Completed Projects
 

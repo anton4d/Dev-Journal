@@ -11,5 +11,6 @@ If a project becomes inactive, it will be either:
 
 | Project | Started | Description | Language | Goal |
 |---------|---------|-------------|----------|------|
+| [Mine Sweeper project](./MineSweeperProject.md) | 2025-08-22 | Making mine sweeper in mutiple languages | python,javascript,rust, java, go, net, c, c# | Showcase all projects in one place and keep personal track of progress |
 
 > _This Index is automatically maintained. Last updated: **2025-08-22**_
