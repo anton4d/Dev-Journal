@@ -16,7 +16,8 @@ tags:
 
 ## Overview
 
-This project is about having fun with multiple languages an learning to develop a cli minesweeper and maybe a gui one after.
+This project is about having fun with multiple
+ languages an learning to develop a cli minesweeper and maybe a gui one after.
 
 ## Goals
 
