@@ -1,13 +1,10 @@
 # On Hold projects
 
-This section lists all currently active projects
+This section lists all currently onhold projects
  with more detail than the [main index](../index.md).
 
-To be considered "ongoing," a project should show activity at least once a month.
-If a project becomes inactive, it will be either:
-
-- moved to the **archive** (if dropped permanently), or
-- moved to **on-hold** (if I plan to return to it later)
+To be considered "onhold," a project should be inactivity.
+If a project becomes active agian, it will be moved to active. 
 
 | Project | Started | Description | Language | Goal |
 |---------|---------|-------------|----------|------|
